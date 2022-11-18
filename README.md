@@ -34,6 +34,7 @@
     - #### [gitignore files](https://help.github.com/articles/ignoring-files/)
 
     - #### Understand branching and merge
+      - Git Branching and Merging with Example ([RESOURCE](https://youtu.be/hufGg2mf7eA))
 
       - [Using Branches](https://www.atlassian.com/git/tutorials/using-branches)
 
