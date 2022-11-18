@@ -7,8 +7,9 @@
 > Each section should be completed in order from top to bottom because some of the skills build on each other.
 
 - #### What Is GitHub? ([RESOURCE](https://youtu.be/T6o3Ci8Ieag))
+- #### Install Git ([RESOURCE](https://youtu.be/T6o3Ci8Ieag))
 
-- #### Git commands ([RESOURCE](https://youtu.be/xnR0dlOqNVE))
+- #### Git commands ([RESOURCE](https://git-scm.com/downloads))
   - git clone
   - git add
   - git commit 
@@ -17,9 +18,15 @@
   - git branch
   - git checkout
   - git status 
+
+- #### How to setup SSH for GitHub repository ([RESOURCE](https://youtu.be/snCP3c7wXw0))
+
+- #### NPM Packages using GitHub ([RESOURCE](https://youtu.be/7CNC0QBCY-Y))
   
 
 - ### Git Resources
+   - #### How to Use Git {Beginner's Guide} blog - ([RESOURCE](https://phoenixnap.com/kb/how-to-use-git))
+   
    - #### [Git Cheat Sheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf)
 
    - #### [Getting Started With Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
