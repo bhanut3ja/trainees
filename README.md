@@ -123,6 +123,22 @@
 
  #### CSS
  - CSS Box Model ([RESOURCE](https://www.w3schools.com/css/css_boxmodel.asp))
-      - Learn CSS Box Model ([RESOURCE](https://www.w3schools.com/css/css_boxmodel.asp))
+      - Learn CSS Box Model ([RESOURCE](https://youtu.be/rIO5326FgPE))
+ - Grid Systems ([RESOURCE](https://www.w3schools.com/css/css_rwd_grid.asp))
+      - Responsive CSS Grid ([RESOURCE](https://youtu.be/68O6eOGAGqA))
+  - Responsiveness ([RESOURCE](https://blog.froont.com/9-basic-principles-of-responsive-web-design/))
+      - Responsive Web Design | 10 Basics ([RESOURCE](https://youtu.be/zF6VSky4SIc))
+  - Flex-box Model ([RESOURCE](https://www.w3schools.com/css/css3_flexbox.asp))
+      - CSS Flexbox ([RESOURCE](https://youtube.com/playlist?list=PLC3y8-rFHvwg6rjbiMadCILrjh7QkvzoQ))
+      - Interactively learn flexbox ([RESOURCE](http://flexboxfroggy.com/))
+  - Frameworks ([RESOURCE](http://flexboxfroggy.com/))
+      - Top CSS Frameworks ([RESOURCE](https://youtu.be/N6SXu86bJ6I))
+  - Pre-processors ([RESOURCE](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor))
+      - CSS Preprocessors ([RESOURCE](https://www.cabotsolutions.com/css-preprocessors-powerful-tools-smarter-styling-web-pages-user-interfaces))
+  -  Sass/SCSS ([RESOURCE](https://sass-lang.com/guide))
+      - Understanding CSS, SCSS and SASS ([RESOURCE](https://youtu.be/Q0WJd7JNxEs))
+  
+  
+  
   
 # React
