@@ -145,7 +145,8 @@
   
   - CSS Full Course ([RESOURCE](https://youtu.be/OXGznpKZ_sA))
   
-# JavaScript ES6 ([RESOURCE](https://youtube.com/playlist?list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml))
+# JavaScript ES6
+  ([RESOURCE](https://youtube.com/playlist?list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml))
    - Constants
    - The Let Keyword
    - Default Parameters
@@ -159,4 +160,5 @@
   
   
   
-# React ([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
+# React
+  ([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
