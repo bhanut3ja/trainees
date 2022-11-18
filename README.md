@@ -103,7 +103,26 @@
 - #### Strict mode – ([RESOURCE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode))
 
 # HTML & CSS
- - DOCTYPE ([RESOURCE VIDEO](https://www.w3schools.com/tags/tag_doctype.asp))
- - HTML <head> Tag ([RESOURCE VIDEO](https://www.w3schools.com/tags/tag_head.asp))
- - HTML <html> Tag ([RESOURCE VIDEO](w3schools.com/tags/tag_html.asp))
+ #### HTML
+ - DOCTYPE ([RESOURCE](https://www.w3schools.com/tags/tag_doctype.asp)) 
+    - What is HTML DOCTYPE? ([video](https://youtu.be/m2-WF_Otq6s))
+ - HTML html Tag ([RESOURCE](https://www.w3schools.com/tags/tag_html.asp))
+ - HTML head Tag ([RESOURCE](https://www.w3schools.com/tags/tag_head.asp))
+ - HTML body Tag ([RESOURCE](https://www.w3schools.com/tags/tag_body.asp))
+ - HTML header Tag ([RESOURCE](https://www.w3schools.com/tags/tag_header.asp))
+ - HTML span Tag ([RESOURCE](https://www.w3schools.com/tags/tag_span.asp))
+ - HTML div Tag ([RESOURCE](https://www.w3schools.com/tags/tag_div.asp))
+ - HTML form Tag ([RESOURCE](https://www.w3schools.com/tags/tag_form.asp))
+    - How to structure an HTML form? ([RESOURCE](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form))
+    - Form Data Validation ([RESOURCE](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation))
+    - input ([RESOURCE](https://www.w3schools.com/tags/tag_input.asp))
+    - textarea ([RESOURCE](https://www.w3schools.com/tags/tag_textarea.asp))
+    - basic attributes ([RESOURCE](https://www.w3schools.com/html/html_attributes.asp))
+    - action ([RESOURCE](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data))
+    - method ([RESOURCE](https://www.w3schools.com/tags/att_form_method.asp))
+
+ #### CSS
+ - CSS Box Model ([RESOURCE](https://www.w3schools.com/css/css_boxmodel.asp))
+      - Learn CSS Box Model ([RESOURCE](https://www.w3schools.com/css/css_boxmodel.asp))
+  
 # React
