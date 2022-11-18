@@ -137,7 +137,13 @@
       - CSS Preprocessors ([RESOURCE](https://www.cabotsolutions.com/css-preprocessors-powerful-tools-smarter-styling-web-pages-user-interfaces))
   -  Sass/SCSS ([RESOURCE](https://sass-lang.com/guide))
       - Understanding CSS, SCSS and SASS ([RESOURCE](https://youtu.be/Q0WJd7JNxEs))
+  - CSS Post-Processors ([RESOURCE](https://www.hongkiat.com/blog/css-post-processors-tips-resources/))
+      - Autoprefixer CSS online ([RESOURCE]([https://sass-lang.com/guide](https://autoprefixer.github.io/)))
   
+  - CSS Basics ([RESOURCE](https://youtube.com/playlist?list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy))
+  - CSS Positioning ([RESOURCE](https://youtube.com/playlist?list=PLqGj3iMvMa4L731ispRfGAabXeRpM4RL6))
+  
+  - CSS Full Course ([RESOURCE](https://youtu.be/OXGznpKZ_sA))
   
   
   
