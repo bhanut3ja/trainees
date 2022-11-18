@@ -18,6 +18,8 @@
 - #### How to setup SSH for GitHub repository ([RESOURCE](https://youtu.be/snCP3c7wXw0))
 
 - #### NPM Packages using GitHub ([RESOURCE](https://youtu.be/7CNC0QBCY-Y))
+ 
+- #### How to push code to GitHub ([RESOURCE](https://youtu.be/qb5DSakkW8Y))
   
 
 - ### Git Resources
