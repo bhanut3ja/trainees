@@ -145,6 +145,18 @@
   
   - CSS Full Course ([RESOURCE](https://youtu.be/OXGznpKZ_sA))
   
+# JavaScript ES6 ([RESOURCE](https://youtube.com/playlist?list=PL4cUxeGkcC9gKfw25slm4CUDUcM_sXdml))
+   - Constants
+   - The Let Keyword
+   - Default Parameters
+   - The Spread Operator
+   - Template Strings
+   - Object Literal Enhancements
+   - New String Methods
+   - Arrow Functions
+   - Sets
+   - Generators
   
   
-# React
+  
+# React ([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
