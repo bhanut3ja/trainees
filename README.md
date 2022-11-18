@@ -102,6 +102,8 @@
 
 - #### Strict mode – ([RESOURCE](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode))
 
- # HTML & CSS
- 
- #React
+# HTML & CSS
+ - DOCTYPE ([RESOURCE VIDEO](https://www.w3schools.com/tags/tag_doctype.asp))
+ - HTML <head> Tag ([RESOURCE VIDEO](https://www.w3schools.com/tags/tag_head.asp))
+ - HTML <html> Tag ([RESOURCE VIDEO](w3schools.com/tags/tag_html.asp))
+# React
