@@ -161,6 +161,8 @@
   
   
 # React
+  - Folder structure  ([RESOURCE](https://youtu.be/XEO3mFvrDx0))
+  - React Hooks ([RESOURCE](https://youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A))
   - Components ([RESOURCE](https://www.javatpoint.com/react-components))
       - React Components ([RESOURCE](https://youtu.be/GhUjuKVZ9y8))
       - Lifecycle of Components ([RESOURCE](https://www.geeksforgeeks.org/reactjs-lifecycle-components/))
