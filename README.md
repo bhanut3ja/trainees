@@ -184,6 +184,3 @@
       - Basics of Form Handling([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
   - Router([RESOURCE](https://www.geeksforgeeks.org/reactjs-forms/))
       - React Router([RESOURCE](https://www.javatpoint.com/react-router))
-  - ([RESOURCE](https://www.geeksforgeeks.org/reactjs-forms/))
-  - ([RESOURCE](https://www.geeksforgeeks.org/reactjs-forms/))
-  - ([RESOURCE](https://www.geeksforgeeks.org/reactjs-forms/))
