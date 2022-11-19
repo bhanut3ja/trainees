@@ -161,4 +161,21 @@
   
   
 # React
-  ([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
+  - Components ([RESOURCE](https://www.javatpoint.com/react-components))
+      - React Components ([RESOURCE](https://youtu.be/GhUjuKVZ9y8))
+  - State([RESOURCE](https://www.javatpoint.com/react-state))
+      - React State ([RESOURCE](https://youtu.be/Vf6G8E-Mp5Y))
+  - Props([RESOURCE](https://www.javatpoint.com/react-props))
+      - React Props ([RESOURCE](https://youtu.be/lf4lTlkP7mM))
+  - Props Validation([RESOURCE](https://www.javatpoint.com/react-props-validation))
+      - React Props Validation ([RESOURCE](https://youtu.be/LcTXWJ3zT2U))
+  - State Vs. Props ([RESOURCE](https://www.javatpoint.com/react-state-vs-props))
+      - React State Vs Props ([RESOURCE](https://youtu.be/IYvD9oBCuJI))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/react-components))
+  - ([RESOURCE](https://www.javatpoint.com/reactjs-tutorial))
