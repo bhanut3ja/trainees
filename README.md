@@ -1,19 +1,28 @@
 # Getting Started
 
 > Each section should be completed in order from top to bottom because some of the skills build on each other.
-# Git
-- #### What Is GitHub? ([RESOURCE](https://youtu.be/T6o3Ci8Ieag))
-- #### Install Git ([RESOURCE](https://git-scm.com/downloads))
+# Learn Git
+- #### What Is GitHub?
+At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. To understand exactly what GitHub is, you need to know two connected principles:
 
-- #### Git commands ([RESOURCE](https://youtu.be/xnR0dlOqNVE))
+-Version control
+-Git
+
+- #### Install Git ([LINK](https://git-scm.com/downloads))
+
+- #### What are Git Commands?
+Git commands are a distributed version control system for tracking changes in any set of files. They were originally designed for coordinating work among programmers who were operating source codes during software development.
+- Most Common Git Commands
   - git clone
-  - git add
-  - git commit 
-  - git push
-  - git pull
-  - git branch
+  - git fetch
   - git checkout
-  - git status 
+  - git init 
+  - git commit
+  - git push
+  - git diff
+  - git pull
+  - git add
+  - git branch 
 
 - #### How to setup SSH for GitHub repository ([RESOURCE](https://youtu.be/snCP3c7wXw0))
 
