@@ -3,9 +3,9 @@
 > Each section should be completed in order from top to bottom because some of the skills build on each other.
 # Git
 - #### What Is GitHub? ([RESOURCE](https://youtu.be/T6o3Ci8Ieag))
-- #### Install Git ([RESOURCE](https://youtu.be/T6o3Ci8Ieag))
+- #### Install Git ([RESOURCE](https://git-scm.com/downloads))
 
-- #### Git commands ([RESOURCE](https://git-scm.com/downloads))
+- #### Git commands ([RESOURCE](https://youtu.be/xnR0dlOqNVE))
   - git clone
   - git add
   - git commit 
