@@ -167,7 +167,7 @@
       - React Components ([RESOURCE](https://youtu.be/GhUjuKVZ9y8))
       - Lifecycle of Components ([RESOURCE](https://www.geeksforgeeks.org/reactjs-lifecycle-components/))
       - React Component Lifecycle([RESOURCE](https://youtu.be/m_mtV4YaI8c))
-       
+  - React Hooks - ([RESOURCE](https://youtube.com/playlist?list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A))
   - #### State([RESOURCE]Conditional Rendering
       - React State ([RESOURCE](https://youtu.be/Vf6G8E-Mp5Y))
   - #### Props([RESOURCE](https://www.javatpoint.com/react-props))
