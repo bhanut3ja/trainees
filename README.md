@@ -2,60 +2,30 @@
 
 > Each section should be completed in order from top to bottom because some of the skills build on each other.
 # Learn Git
-- #### What Is GitHub?
+- ### What Is GitHub?
 At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. To understand exactly what GitHub is, you need to know two connected principles:
 
 -Version control
 -Git
 
-- #### Install Git ([LINK](https://git-scm.com/downloads))
+- ### Install Git ([LINK](https://git-scm.com/downloads))
 
-- #### What are Git Commands?
-Git commands are a distributed version control system for tracking changes in any set of files. They were originally designed for coordinating work among programmers who were operating source codes during software development.
-- Most Common Git Commands
-  - git clone
-  - git fetch
-  - git checkout
-  - git init 
-  - git commit
-  - git push
-  - git diff
-  - git pull
-  - git add
-  - git branch 
+- ### Create a Local Git Repository
+     To create a Git repository, follow the steps below:
 
-- #### How to setup SSH for GitHub repository ([RESOURCE](https://youtu.be/snCP3c7wXw0))
+1. Open a Git Bash terminal and move to the directory where you want to keep the project on your local machine. For example:
 
-- #### NPM Packages using GitHub ([RESOURCE](https://youtu.be/7CNC0QBCY-Y))
+       > cd ~/Desktop
+       > mkdir myproject
+       > cd myproject/
  
-- #### How to push code to GitHub ([RESOURCE](https://youtu.be/qb5DSakkW8Y))
+    In this example, we changed the directory to Desktop and created a subdirectory called myproject
   
+2. Create a Git repository in the selected folder by running the git init command. The syntax is:
 
-- ### Git Resources
-   - #### How to Use Git {Beginner's Guide} blog - ([RESOURCE](https://phoenixnap.com/kb/how-to-use-git))
-   
-   - #### [Git Cheat Sheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.pdf)
-
-   - #### [Getting Started With Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-
-    - #### Basics - [Learn To Love Git](https://medium.com/designing-atlassian/learn-to-love-git-part-one-the-basics-90429f456ace)
-
-    - #### [Try Git](https://try.github.io/) tutorial
-
-    - #### [gitignore files](https://help.github.com/articles/ignoring-files/)
-
-    - #### Understand branching and merge
-      - Git Branching and Merging with Example ([RESOURCE](https://youtu.be/hufGg2mf7eA))
-
-      - [Using Branches](https://www.atlassian.com/git/tutorials/using-branches)
-
-      - [Creating new branch and managing branches](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
-
-      - [Git branch](https://learngitbranching.js.org/) tutorial
-
-    - #### [Github issues](https://guides.github.com/features/issues/) and [pull Requests](https://yangsu.github.io/pull-request-tutorial/)
+       > git init [repository-name]
     
-    - #### [Git commands](https://medium.freecodecamp.org/git-cheat-sheet-and-best-practices-c6ce5321f52)
+    
 
 
 # JAVASCRIPT
