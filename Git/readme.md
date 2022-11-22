@@ -25,7 +25,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
        git init [repository-name]
     
-    <img src="Git/img/git init.png" width="700">
+    <img src="img/git init.png" width="700">
     
     Now you have successfully created a local Git repository.
 
@@ -38,11 +38,11 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
     2. Find the <strong> New repository </strong> option under the <strong>+</strong> sign next to your profile picture, in the top right corner.
      <br></br>
-    <img src="Git/img/create-repository-in-github.png">
+    <img src="img/create-repository-in-github.png">
     <br></br>
     3. Enter a name for your repository, provide a brief description, and choose a privacy setting.
     <br></br>
-    <img src="Git/img/github-repository-personalization.png">
+    <img src="img/github-repository-personalization.png">
     <br></br>
     4. Click the Create repository button.
 
@@ -53,7 +53,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
     
     For example:
     <br></br>
-    <img src="Git/img/push-local-repo-to-github.png">
+    <img src="img/push-local-repo-to-github.png">
     <br></br>
     
 - ### Add a File to the Repository
@@ -63,7 +63,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
     
       git status
       
-    <img src="Git/img/git-status-command.png">
+    <img src="img/git-status-command.png">
     <br></br>
     Git notifies you if you have any untracked files. If you want Git to start tracking a file, run the following command:
     
@@ -71,7 +71,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
       
     For example:
     
-    <img src="Git/img/add-file-to-repository.png">
+    <img src="img/add-file-to-repository.png">
     <br></br>
     
     In this example, we instructed Git to start tracking changes for the test.txt file. Rerunning the <strong>git status</strong> command shows that Git is tracking the specified file.
@@ -86,7 +86,7 @@ One way to unstage files on Git is to run the <strong>git reset</strong> command
     
     For example:
     
-    <img src="Git/img/unstage-file-in-git.png">
+    <img src="img/unstage-file-in-git.png">
     <br></br>
 
 
@@ -101,7 +101,7 @@ The syntax is:
 
 For example:
 
-     <img src="Git/img/push-commit-on-git.png">
+     <img src="img/push-commit-on-git.png">
     <br></br>
 
 - ### Undo Last Commit
@@ -117,7 +117,7 @@ A hash is a code that identifies each commit. Obtain a commit hash by running:
     
 For example:
 
-     <img src="Git/img/undo-last-commit-on-git.png">
+     <img src="img/undo-last-commit-on-git.png">
     <br></br>
 
 In this example, we first ran the <strong>git log</strong> command to obtain the commit hash and then reverted the last commit by running <strong>git revert</strong> with the commit hash we obtained.
@@ -133,7 +133,7 @@ The common method for creating a new branch is by running:
 
 For example:
 
-     <img src="Git/img/create-a-new-branch-in-git.png">
+     <img src="img/create-a-new-branch-in-git.png">
     <br></br>
 
 In this example, we create a new branch named new-feature.
@@ -148,7 +148,7 @@ Replace [branch_name] with the branch name you want to access.
 
 For example:
 
-<img src="Git/img/switch-branch-in-git.png">
+<img src="img/switch-branch-in-git.png">
 <br></br>
     
 - ### Rename a Local or Remote Git Branch
@@ -160,7 +160,7 @@ The syntax for changing a local Git branch name is:
 
 For example:
 
-<img src="Git/img/change-branch-name-in-git.png">
+<img src="img/change-branch-name-in-git.png">
 
 In this example, we changed the local branch name from new-feature to feature-testing.
 
@@ -181,14 +181,14 @@ Deleting a local branch doesn't affect a remote branch. To delete a <strong>loca
       
    In this example, we deleted a local Git branch:
    
-   <img src="Git/img/delete-a-branch-in-git.png">
+   <img src="img/delete-a-branch-in-git.png">
 
 - ### Set Upstream Branch
 Sending something upstream in Git means that you are sending it back to the repository owner.
 
 Using the <strong>git set upstream</strong> command, you can choose the flow direction of your current local branch. The command also allows you to change the default remote branch.
 
-   <img src="Git/img/set-upstream-branch-in-git.png">
+   <img src="img/set-upstream-branch-in-git.png">
 
 Our tutorial on What Is Git Upstream and How to Set an Upstream Branch deals with the different methods for setting an upstream branch and gives a detailed explanation on the topic.
 
