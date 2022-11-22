@@ -25,7 +25,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
        > git init [repository-name]
     
-    ❮img src="Git/img/git_init.png" width="100" ❯
+    ❮img src="Git/img/git%20init.png" width="100" ❯
 
 
 # JAVASCRIPT
