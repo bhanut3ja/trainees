@@ -140,7 +140,7 @@ In this example, we create a new branch named new-feature.
 
 
 - ### Switch Branches
-     Having several branches of a Git project provides a test environment for developers to track progress without affecting the production version of an application. Git allows you to switch between branches with the <strong>checkout</strong> command easily. The syntax is:
+Having several branches of a Git project provides a test environment for developers to track progress without affecting the production version of an application. Git allows you to switch between branches with the <strong>checkout</strong> command easily. The syntax is:
 
       git checkout [branch_name]
 
@@ -148,10 +148,50 @@ Replace [branch_name] with the branch name you want to access.
 
 For example:
 
-     <img src="Git/img/switch-branch-in-git.png">
-    <br></br>
+<img src="Git/img/switch-branch-in-git.png">
+<br></br>
     
-  
+- ### Rename a Local or Remote Git Branch
+In Git, you can rename a local or remote Git branch.
+
+The syntax for changing a local Git branch name is:
+
+      git branch -m new-name
+
+For example:
+
+<img src="Git/img/change-branch-name-in-git.png">
+
+In this example, we changed the local branch name from new-feature to feature-testing.
+
+Since there isn’t a way to directly rename a remote Git branch, you first need to delete the old branch name, then push the new branch name to the remote repository.
+
+- ### Delete a Local or Remote Git Branch
+You may decide to delete a Git branch after merging the changes with the master branch or if the branches become corrupted.
+
+You can delete local and remote Git branches.
+
+Deleting a local branch doesn't affect a remote branch. To delete a <strong>local</strong> Git branch, run:
+
+      git branch -d [branch_name]
+      
+   Use the following syntax to delete a remote Git branch:
+   
+      git push [remote_project] --delete [branch_name]
+      
+   In this example, we deleted a local Git branch:
+   
+   <img src="Git/img/delete-a-branch-in-git.png">
+
+- ### Set Upstream Branch
+Sending something upstream in Git means that you are sending it back to the repository owner.
+
+Using the <strong>git set upstream</strong> command, you can choose the flow direction of your current local branch. The command also allows you to change the default remote branch.
+
+   <img src="Git/img/set-upstream-branch-in-git.png">
+
+Our tutorial on What Is Git Upstream and How to Set an Upstream Branch deals with the different methods for setting an upstream branch and gives a detailed explanation on the topic.
+
 
 
 
