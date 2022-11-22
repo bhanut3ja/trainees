@@ -15,15 +15,15 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
 1. Open a Git Bash terminal and move to the directory where you want to keep the project on your local machine. For example:
 
-       > cd ~/Desktop
-       > mkdir myproject
-       > cd myproject/
+       cd ~/Desktop
+       mkdir myproject
+       cd myproject/
  
     In this example, we changed the directory to Desktop and created a subdirectory called myproject
   
 2. Create a Git repository in the selected folder by running the git init command. The syntax is:
 
-       > git init [repository-name]
+       git init [repository-name]
     
     <img src="Git/img/git init.png" width="700">
     
@@ -36,9 +36,43 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
     1. Log in and browse to the GitHub home page.
 
-    2. Find the <strong> New repository </strong> option under the + sign next to your profile picture, in the top right corner.
+    2. Find the <strong> New repository </strong> option under the <strong>+</strong> sign next to your profile picture, in the top right corner.
+     <br></br>
+    <img src="Git/img/create-repository-in-github.png">
+    <br></br>
+    3. Enter a name for your repository, provide a brief description, and choose a privacy setting.
+    <br></br>
+    <img src="Git/img/github-repository-personalization.png">
+    <br></br>
+    4. Click the Create repository button.
+
+     GitHub allows you to add an existing repo you have <strong>created locally.</strong> To push a local repository from your machine to GitHub, use the following syntax:
      
-    <img src="Git/img/git init.png" width="700">
+       git remote add origin https://github.com/[your-username]/[repository-name.git]
+       git push -u origin master
+    
+    For example:
+    <br></br>
+    <img src="Git/img/push-local-repo-to-github.png">
+    <br></br>
+    
+- ### Add a File to the Repository
+    Git notices when you add or modify files in the folder containing the Git repository but doesn't track the file unless instructed. Git saves the changes only for the files it tracks, so you need to let Git know you want to track changes for a specific file.
+    
+    You can check which files Git is tracking by running:
+    
+      git status
+      
+    <img src="Git/img/git-status-command.png">
+    <br></br>
+    Git notifies you if you have any untracked files. If you want Git to start tracking a file, run the following command:
+    
+      git add [filename]
+    
+    
+    
+    
+    
     
     
     
