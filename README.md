@@ -25,9 +25,26 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
        > git init [repository-name]
     
-    ❮img src="Git/img/git%20init.png" width="100" ❯
+    <img src="Git/img/git init.png" width="700">
+    
+    Now you have successfully created a local Git repository.
 
+- ### Create a New Repository on GitHub
+    GitHub allows you to keep track of your code when you're working with a team and need to modify the project's code collaboratively.
 
+    Follow these steps to create a new repository on GitHub:
+
+    1. Log in and browse to the GitHub home page.
+
+    2. Find the <strong> New repository </strong> option under the + sign next to your profile picture, in the top right corner.
+     
+    <img src="Git/img/git init.png" width="700">
+    
+    
+    
+    
+    
+    
 # JAVASCRIPT
 - #### What and why is javascript  ([RESOURCE](https://blog.hubspot.com/website/what-is-javascript))
 
