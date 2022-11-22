@@ -200,6 +200,88 @@ However, over time, the remote repository may move to another host, or a team me
 There are several ways to remove a Git remote. One of the ways is to delete a remote using the command line. The syntax is:
 
       git remote remove [remote name]
+      
+In the following example, running <strong>git remote -v</strong> shows the available remotes, 'origin' and 'test-remote.' After removing 'test-remote' and rerunning <strong>git remote -v</strong> to list available remotes, we see that the only available remote is 'origin.'
+
+   <img src="Git/img/remove-a-git-remote.png">
+
+- ### Git Merge
+ 
+Git merge unifies <strong>multiple commit sequences into a single commit.</strong> It can combine two branches, thus integrating the independent development lines into a single branch.
+
+After merging two branches, Git updates the current branch to reflect the merge, but the target branch isn't affected. That means you have to use the <strong>git branch -d</strong> command to delete the obsolete target branch.
+
+For example, you may want to merge a new feature branch into the main branch. Follow the steps below:
+
+1. Run the <strong>git status</strong> command to ensure that HEAD is pointing to the correct merge-receiving (master) branch. If it is not, run <strong>git checkout </strong>master to switch to the master branch.
+
+   <img src="Git/img/git-merge-first-step.png">
+   
+2. Run git fetch to pull the latest remote commits and git pull to ensure the main branch has the latest updates.
+
+   <img src="Git/img/git-merge-update.png">
+   
+3. Run git merge X where X is the name of the branch you want to merge into the receiving branch.
+
+   <img src="Git/img/git-merge.png">
 
 
+- ### Resolve Merge Conflicts
+ Merge conflicts usually occur when multiple developers work on the same code of a project or when they work with several development branches. Git merge warns the user about these conflicts.
 
+Although most merge conflicts resolve automatically, there are cases when git merge cannot resolve an issue.
+
+- ### Create a Pull Request
+ Create a pull request (PR) to inform a repository owner that they should review the changes you've made to their code. Then the owner can approve the pull request and merge the changes into the main repository.
+ 
+ If you are the co-owner or owner of a repository, you don't have to create pull requests to merge your changes. However, you can still do it to keep track of your feature updates and history.
+
+For this guide, we will create a readme file for our repository locally and make a pull request on GitHub to illustrate the process.
+
+Follow the steps below:
+
+1. In Git Bash, create an empty readme file by running <strong>touch readme.md.</strong>
+
+2. Create and switch to a new branch on which to modify the file. Run:
+
+      git checkout -b create-readme-file
+
+3. Open the readme file in a text editor and add the text you want it to contain. In this example, we will use the Nano text editor to modify the file within the command line window. Run <strong>nano readme.md<s/trong>.
+
+   <img src="Git/img/opening-a-file-in-nano-text-editor.png">
+
+ 4. After you save the file, track it by running <strong>git add readme.md<strong>.
+
+5. Create a commit.
+
+      git commit -m "Added a readme file"
+
+6. Push the changes to GitHub.
+     
+      git push origin create-readme-file
+     
+ 7. Log in to your GitHub page. There is now a <strong>Create pull request</strong> option in your repository with the branch name we created in the command line. Click the <strong>Compare & pull request</strong> button.
+   
+   <img src="Git/img/compare-and-pull-request-on-github.png">
+  
+8. GitHub states if you can merge the branches and apply the changes. Optionally, add a comment about your pull request and click <strong>Create pull request<strong>. 
+     
+   <img src="Git/img/create-pull-request.png">
+     
+   Now the repository owner, in this case, you, can review the changes and accept or reject them.
+
+You can accept the changes in the <strong>Pull requests</strong> tab on GitHub. When you merge the branches, delete the obsolete branch by clicking <strong>Delete branch</strong> to keep the repository clean.
+   
+- ### Synchronize Changes on GitHub and Locally
+  When you merge changes on GitHub, they don't appear automatically in your local repository. You have to pull the changes to your local repository to see the updates.
+
+Synchronize your local repository with GitHub by running:
+     
+      git pull origin master
+     
+The command updates your local repository to match the one on GitHub, and states the changes.
+
+In the following example, we first switched to our master branch, and Git warned us that we should update our local repository:     
+   
+   <img src="Git/img/sync-git-and-github.png">
+     
