@@ -986,11 +986,11 @@ __
       alert("There is error which shows "+e.message); //Handling error  
       }  
 
-     Throw statements are used for throwing user-defined errors. User can define and throw their own custom errors.
-
-
-      throw exception;  
-
+__   
+           
+Throw statements are used for throwing user-defined errors. User can define and throw their own custom errors.
+-
+           throw exception;  
 __
 
       try {  
@@ -1215,7 +1215,44 @@ __
           
      < button>	It defines a clickable button.
  
-          
+- ### Page Layout Techniques
+     using Semantic tags for layout using the Right Tags 
+
+       <header>
+       <main>
+       <footer> 
+
+     Inside Main Tag 
+
+     Section Tag   -> For a section on your page
+
+       <section>
+
+     Article Tag  -> For an article on your page
+
+       <article> 
+
+     Aside Tag  -> For content aside main content(ads)
+
+       <aside>
+
+-### Div Tag
+
+     Div is a container used for other HTML elements 
+     Block Element (takes full width) 
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CSS   
           
 ---
