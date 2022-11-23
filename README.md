@@ -1236,23 +1236,431 @@ __
 
        <aside>
 
--### Div Tag
+- ### Div Tag
 
      Div is a container used for other HTML elements 
      Block Element (takes full width) 
 
 
+# CSS - (Cascading Style Sheets)
+            
+CSS (Cascading Style Sheets) allows you to create great-looking web pages.
+            
+It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces.
+
+CSS syntax
+
+       h1 {
+       color: red;
+       font-size: 5em;
+       }
+__
+            
+- There are 3 ways to add CSS to HTML:
+            
+     1.<style> tag : Adding <style> … </style> to HTML
+     
+     2.Inline CSS : Adding CSS using style attribute
+            -> An inline style will override external and internal styles
+            
+     3.External CSS : Adding a stylesheet(.css) to HTML using <link> tag.
+
+     - HTML id  attributes
+     When an HTML element is given an id, it serves as a unique identifier for that element.
+
+     - HTML class attributes
+     HTML element is given a class, it now belongs to that class. More than one element can belong to a single class 
+
+     Example:
+
+       <div id = ‘first’ class = ‘C1 C2 C3’>
+       …
+       </div>
 
 
+- CSS selectors
+CSS selectors define the pattern to select elements to which a set of CSS rules are then applied.
+
+- Universal selectors
+The CSS universal selector (*) matches elements of any type.
+
+example :
+            
+       * {
+       color: green;
+       margin: 0;
+       padding: 0;
+       }
+
+- Id Selector
+It is used to select an element with a given id
+            
+Syntax:    `#idname`
+
+example: 
+            
+       #first {
+       color: white;
+       background: black;
+       }
+                               
+‘#’ is used to target by id
+
+- Class Selector
+It is used to select an element with a given class.
+            
+Syntax:  `.classname`
+
+example:
+
+       .red {
+       background: red;
+       }
 
 
+- Type selectors
+The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document.
+            
+Syntax:   `element { style properties }`
+            
+example:
+
+       a {
+       color: red;
+       }
+
+- Group selectors
+When multiple selectors share the same declarations, they can be grouped together into a comma-separated list.
+            
+example:
+
+       h1,h2,h3,div {
+       color:blue;
+       }
+
+- color property
+The CSS color property can be used to set the text color inside an element
+
+       p{
+       color: red;       /*Text color will be changed to red*/
+       }
+
+- background-color property
+The CSS background-color property specifies the background color of a container.
+            
+example:
+            
+       .brown {
+       background-color: brown;
+       }
+
+The background-image property
+Used to set an image as the background
+
+       body {
+       background-image: url(“image.jpg”)
+       }
+       /*The image is by default repeated in X & Y directions*/
+
+- background-repeat property 
+     - repeat-x : => repeat in the horizontal direction
+     - repeat-y :  => repeat in the vertical direction
+     - no-repeat : =>  image not repeat 
+
+- background-size property
+     - cover :  => fits & no empty space remains
+     - contain :  => fits & image is fully visible
+     - auto :  => display in original size
+     - {{width}} : =>  set width & height will be set automatically
+     - {{width}} {{height}} :  => set width & height
+
+- background-position property
+Sets the starting position of a background image
+
+       .div1{
+       background-position: left top;
+       }
+
+- background-attachment property
+Defines a scrollable/non-scrollable character of a background image
+
+       .div2{
+       background-attachment: fixed
+       }
+
+- background shorthand
+A single property to set multiple background properties
+
+       .div3{
+       background: red url(‘img.png’) no-repeat fixed right top;
+       } 
+
+- display property
+The CSS display property is used to determine whether an element is treated as a block/inline element & the layout used for its children (flexbox/grid/etc.)
+
+- display: `inline`
+Takes only the space required by the element. No line breaks before and after. Setting width/height (or margin/padding) not allowed.
+
+- display: `block`
+Takes full space available in width and leaves a newline before and after the element
+
+- display: `inline-block`
+Similar to inline but setting height, width, margin, and padding is allowed. Elements can sit next to each other
+
+- display: `none`
+With display: none, the element is removed from the document flow. Its space is not blocked.
+
+- visibility: `hidden`
+With visibility: hidden, the element is hidden but its space is reserved.
+
+- text-align property
+Used to set the horizontal alignment of a text
+
+       .div1{
+       text-align: center;
+       }
+
+- text-decoration property Used to decorate the text
+> Can be overline, line-through, underline, none
+
+- text-transform property
+Used to specify uppercase and lowercase letters in a text
+
+       p.uppercase{
+       text-transform: uppercase;
+       }
+
+- line-height property
+Used to specify the space between lines
+
+       .Small{
+       line-height: 0.7;
+       }
+
+- Font
+Font plays a very important role in the look and feel of a website
+
+`Font-family : =>Font family specifies the font of a text.`
+
+       p{
+       font-family: “Times new Roman”, monospace;
+       } 
+
+- Other Font Properties 
+     - `font-size`: Sets the size of the font
+     - `font-style`: Sets the font style
+     - `font-variant`: Sets whether the text is displayed in small-caps
+     - `font-weight`: sets the weight of the font
+
+- How to add Google Fonts 
+     - In order to use custom google fonts, 
+     - go to google fonts then select a style, 
+     - and finally paste it to the style.css of your page.
+
+- What’s wrong with pixels?
+     - Pixels (px) are relative to the viewing device.
+     - For a device with the size 1920x1080, 1px is 1unit out of 1080/1920.
+
+- Relative lengths
+     - These units are relative to the other length property. 
+     - 4.	em – unit relative to the parent font size
+     - 5.	em means “my parent element’s font-size”
+     - 6.	rem – unit relative to the root font size (<html> tag)
+     - 7.	vw – unit relative to 1% viewport width
+     - 8.	vh – unit relative to 1% viewport height
+     - 9.	% - unit relative to the parent element
+
+-Min/max- height/width property
+     - CSS has a min-height, max-height, and min-width, max-width property.
+     - If the content is smaller than the minimum height, minimum height will be applied
+
+- position property 
+Used to manipulate the location of an element  
+     - `static`: The default position. top/bottom/left/right/z-index has no effect
+     - `relative` : The top/bottom/left/right/z-index will now work. Otherwise, the element is in the flow of the document like static.
+     - `absolute`: The element is removed from the flow and is relatively positioned to its first non-static ancestor. top/bottom etc. works
+     - `fixed`: Just like absolute except the element is positioned relative to the browser window
+     - `sticky`: The element is positioned based on the user’s scroll position
+
+- list-style property
+The list-style property is a shorthand for type, position, and image 
+            
+       ul{
+       list-style: square inside url(‘image.jpg’)
+       }
+            
+- '# square’ in the above code is the list-style-type, ‘inside’ is the list-style-position and ‘image.jpg’ is the list-style-image. 
+
+- z-index property 
+     - The z-index property specifies the stack order of an element.
+     - It defines which layer will be above which in case of overlapping elements.
+            
+- float property
+     - float property is simple. It just flows the element towards left/right 
+
+- CSS Flexbox
+Aims at providing a better way to layout, align, and distribute space among items in a container.
+            
+       .container{
+       display: flex;                  /*Initialize a flexbox*/
+       }
+
+- flex-direction property 
+Defines the direction towards which items are laid.
+Can be row (default), row-reverse, column and column-reverse  
+
+- Flex properties for parent (flex container) 
+     - `flex-wrap`: Can be wrap, nowrap, wrap-reverse. Wrap items as needed with this property
+     - `justify-content`: Defines alignment along the main axis
+     - ``align-items`: Defines alignment along the cross axis
+     - align-content`: Aligns a flex container’s lines when there is extra space in the cross axis 
+
+- Flex properties for the children (flex items) 
+     - `order`: Controls the order in which the items appear in the flex container.
+     - `align-self`: Allows default alignment to be overridden for the individual flex items.
+     - `flex-grow`: Defines the ability for a flex item to grow.
+     - `flex-shrink`: Specifies how much a flex item will shrink relative to the rest of the flex items.
+
+- CSS grid can be initialized using:
+
+       .container {
+       display: grid;
+       }
+            
+All direct children automatically become grid items
+
+- grid-column-gap property
+Used to adjust the space between the columns of a CSS grid
+ 
+- grid-row-gap property
+Used to adjust the space between the rows of a CSS grid
+
+- grid-gap property
+Shorthand property for grid-row-gap & grid-column-gap 
+
+       .container {
+       display: grid;
+       grid-gap: 40px 100px;            /*40px for row and 100px for column*/
+       }
+        /* For a single value of grid-gap, both row and column gaps can be set in one value.*/
+
+- Following are the properties for grid container: 
+The grid-template-columns property can be used to specify the width of columns
+
+        .container {
+        display: grid;
+        grid-template-columns: 80px 120px auto;
+        }
+            
+The grid-template-rows property can be used to specify the height of each row
+
+        .container {
+        display: grid;
+        grid-template-rows: 70px 150px;
+        }
+            
+The justify-content property is used to align the whole grid inside the container.
+The align-content property is used to vertically align the whole grid inside the container.
+
+- Transforms are used to rotate, move, skew or scale elements. They are used to create a 3-D effect.
+
+- transform property  
+Used to apply a 2-D or 3-D transformation to an element
+
+- The transform-origin property
+     Allows to change the position of transformed elements
+     2D transforms – can change x & y-axis
+     3D transforms – can change Z-axis as well
+
+- CSS 2D transform methods
+            
+translate()
+            
+rotate()
+            
+scaleX()
+            
+scaleY()
+            
+skew()
+            
+matrix()
+            
+scale()
+ 
+- CSS 3D transform methods
+rotateX()
+            
+rotateY()
+            
+rotateZ()
 
 
+- CSS Transitions
+Used to change property values smoothly, over a given duration.
+            
+transition property 
+            
+`transition-property`: The property you want to transition
+            
+`transition-duration`: Time for which you want the transition to apply
+            
+`transition-timing-function`: How you want the property to transition
+            
+`transition-delay`: Specifies the delay for the transition 
 
+            
+- Syntax:      transition: property duration timing-function delay;
+                    transition: width 35 ease-in 25;
+ 
+Transitioning multiple properties 
+transition: opacity 15 ease-out 15, transform 25 ease-in;
 
+- CSS Animations
+Used to animate CSS properties with more control.
+We can use the @keyframes rule to change the animation from a given style to a new style.
 
+        @keyframes text{
+        from { width: 20px; }              /*Can change multiple properties*/
+        to { width: 31px; }
+        } 
 
+- Properties to add Animations 
+`animation-name`: name of the animation
+            
+`animation-duration`: how long does the animation run?
+            
+`animation-timing-function`: determines speed curve of the animation
+            
+`animation-delay`: delay for the start of an animation
+            
+`animation-iteration-count`: number of times an animation should run
+            
+`animation-direction`: specifies the direction of the animation
+ 
+- Animation  
+            
+All the animation properties from 1-6 can be applied like this 
+            
+animation: text 65 linear 15 infinite reverse; 
 
-# CSS   
-          
+Using percentage value states with animation 
+            
+We can use % values to indicate what should happen when a certain percent of animation is completed 
+            
+        @keyframes text{
+        0% {
+        width: 20px;
+        }
+        50% {
+        width: 80px;
+        }
+        100% {
+        width: 200px;
+        }
+        }
+   
 ---
+# React
+- ### Introduction to React JS
+     - Why React?
