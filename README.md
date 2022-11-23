@@ -369,14 +369,158 @@ In the following example, we first switched to our master branch, and Git warned
       }
       console.log(greeting);//”Say hi”
      
+- ### Const     
+     Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.   
+
+      const greeting = "say Hi";
+      greeting = "say Hello instead";// error: Assignment to constant variable. 
+
+      nor this:
+      
+      const greeting = "say Hi";
+      const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared
+
+    <img src="javascript/img/vlc.jpg">
      
+- ### Data Types     
+     There are eight basic data types in JavaScript. They are:
      
+     | Data Types | Description | Example |
+     |-----:|---------------|---------------|
+     |1.String| represents textual data|'hello', "hello world!" etc|
+     |2.Number|an integer or a floating-point number|3, 3.234, 3e-2 etc.|
+     |3.Big Int|an integer with arbitrary precision|900719925124740999n , 1n etc.|
+     |4.Boolean|Any of two values: true or false|true and false|
+     |5.Undefined|a data type whose variable is not initialized|let a;|
+     |6.Null|denotes a null value|let a = null;|
+     |7.Symbol |data type whose instances are unique and immutable|let<br>value = Symbol('hello');|
+     |8.Object|key-value pairs of collection of data|let student = { };|
      
+     Here, all data types except Object are primitive data types, whereas Object is non-primitive.
      
+     > Note: The Object data type (non-primitive type) can store collections of data, whereas primitive data type can only store a single data.     
      
+- ### Template literals (Template strings)     
+     Template literals are literals delimited with backtick (`) characters, allowing for multi line strings, string interpolation  with embedded expressions.
      
+     Template literals are sometimes informally called template strings, because they are used most commonly , string interpolation  (to create strings by doing substitution of placeholders).
      
+ - ### Syntax    
+ 
+      `string text`
+
+      `string text line 1`
+      
+      `string text line 2`
+      
+      `let expression = 2;`
+      
+      `string text ${expression} string text`
      
+- ### Operators
+     JavaScript operators are symbols that are used to perform operations on operands.
+     For example:
+
+     `1.	var sum=10+20;`
+
+     Here, + is the arithmetic operator and = is the assignment operator.
+     
+     There are following types of operators in JavaScript.
+
+    <img src="javascript/img/Operators.jpg">
+
+- ### Arithmetic Operators     
+     |Operator|Description|Example|
+     |-----:|---------------|---------------|
+     |  +  |Addition|10+20 = 30|
+     |  -  |Subtraction|20-10 = 10|
+     |  *  |Multiplication|10*20 = 200|
+     |  /  |Division|20/10 = 2|
+     |  %  |Modulus (Remainder)|20%10 = 0|
+     |  ++  |Increment|var a=10; a++; Now a = 11|
+     |  --  |Decrement|var a=10; a--; Now a = 9|
+
+ - ### Comparison Operators    
+     
+     |Operator|Description|Example|
+     |-----:|---------------|---------------|
+     |  ==  |Is equal to|10==20 = false|
+     |  ===  |Identical (equal and of same type)|10==20 = false|
+     |  !=  |Not equal to|10!=20 = true|
+     |  !==  |Not Identical|20!==20 = false|
+     |  >  |Greater than|20>10 = true|
+     |  >=  |Greater than or equal to|20>=10 = true|
+     |  < |Less than|20<10 = false|
+     |  <= |Less than or equal to|20<=10 = false|
+
+
+
+- ### Bitwise Operators
+
+     |Operator|Description|Example|
+     |-----:|---------------|---------------|
+     |  &  |Bitwise AND|(10==20 & 20==33) = false|
+     |  |  |Bitwise OR|(10==20 | 20==33) = false|
+     |  ^  |Bitwise XOR|(10==20 ^ 20==33) = false|
+     |  ~  |Bitwise NOT|(~10) = -10|
+     |  << |Bitwise Left Shift|(10<<2) = 40|
+     |  >> |Bitwise Right Shift|(10>>2) = 2|
+     |  >>> |Bitwise Right Shift with Zero|(10>>>2) = 2|
+    
+- ### Logical Operators
+
+     |Operator|Description|Example|
+     |-----:|---------------|---------------|
+     |  &&  |Logical AND|(10==20 && 20==33) = false|
+     |  ||  |Logical OR|(10==20 || 20==33) = false|
+     |  !  |Logical Not|!(10==20) = true|
+
+
+
+- ### Assignment Operators
+
+     |Operator|Description|Example|
+     |-----:|---------------|---------------|
+     |  =  |Assign|10+10 = 20|
+     |  +=  |Add and assign|var a=10; a+=20; Now a = 30|
+     |  -=  |Subtract and assign|var a=20; a-=10; Now a = 10|
+     |  *=  |Multiply and assign|var a=10; a*=20; Now a = 200|
+     |  /=  |Divide and assign|var a=10; a/=2; Now a = 5|
+     |  %=  |Modulus and assign|var a=10; a%=2; Now a = 0|
+   
+- ### Special Operators
+
+     |Operator|Description|
+     |-----:|---------------|
+     |(?:)|Conditional Operator returns value based on the condition. It is like if-else.|
+     |  ,  |Comma Operator allows multiple expressions to be evaluated as single statement.|
+     |  delete  |Delete Operator deletes a property from the object.|
+     |  In  |In Operator checks if object has the given property|
+     |  Instanceof  |checks if the object is an instance of given type|
+     |  New  |creates an instance (object)|
+     |  Typeof  |checks the type of object.|
+     |  Void  |it discards the expression's return value.|
+     |  Yield  |checks what is returned in a generator by the generator's iterator.|
+
+- ### String
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      
      
      
