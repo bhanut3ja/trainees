@@ -1213,7 +1213,7 @@ __
           
      < option>	      =>  It defines an option in a drop-down list.
           
-     < button>	It defines a clickable button.
+     < button>	      =>  It defines a clickable button.
  
 - ### Page Layout Techniques
      using Semantic tags for layout using the Right Tags 
