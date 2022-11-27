@@ -1049,9 +1049,30 @@ __
  
  # HTML
 - ### What Is HTML ?
-     HTML stands for hypertext markup language – it is used to display web pages on the browser. In order to create web pages.
+  - HTML stands for hyper text markup language .
+  - HTML is the code that is used to structure a web page and its content.
+  - The component used to design the structure of websites are called HTML tags.
+
+- ### First HTML File
+  - index.html
+  - It is the default name for a website's homepage. 
+
 - ### HTML Tags
      One of the main parts of HTML is HTML tags – HTML tags are like keywords that define how a web browser will format and display content.
+           
+     A container for some content or other HTML tags.
+           
+          < !DOCTYPE html> -> is a tag used to tell the browser the version of html that you are using.
+         
+          < html>                   -> root of an html document
+          < head>                 -> container for metadata 
+          < title>My First Page</title>     -> page Title
+          < /head> 
+          < body>        -> contains all data rendered by the browser 
+          < p>hello world</p>      -> paragraph tag 
+          < /body> 
+          < /html>
+
      
      <strong>< !DOCTYPE html ></string> is a tag used to tell the browser the version of html that you are using.
      
@@ -1108,6 +1129,62 @@ __
                <p>The code has lowercase body tags</p>
           </body>
           </html>
+          
+- ### Anchor Tag
+          
+Used to add links to your page.
+          
+    < a href="https://google.com"> Google </a>
+
+- ### Image Tag
+Used to add images to your page
+          
+    < img src="/image.png" alt="Random Image">
+          
+- ### Br Tag
+          
+Used to add next line(line breaks) to your page
+          
+    < br>
+          
+- ### Bold, Italic & Underline Tags
+Used to highlight text in your page 
+          
+    <b> Bold </b> 
+    <i> Italic </i> 
+    <u> Underline </u>
+          
+- ### Big & Small Tags
+Used to display big & small text on your page
+          
+    <big> Big </big>
+    <small> Small </small>
+
+- ### Hr Tag
+Used to display a horizontal ruler, used to separate content
+          
+    < hr>
+          
+- ### iframe Tag
+website inside website
+          
+    < iframe src="link"> Link </option>
+
+
+
+- ### Video Tag
+
+    < video src="myVid.mp4">	My Video </video>
+
+Attributes
+
+-controls
+-height
+-width
+-loop
+-autoplay
+
+
 
 - ### HTML Basic Elements
           
@@ -1148,6 +1225,8 @@ __
      
 - ### HTML Attributes
      HTML attributes are the special words placed inside the opening tags and used to define the characteristics of an HTML element. 
+        
+       <html lang="en">
           
      The four core attributes that can be used on the majority of HTML elements
           
@@ -1164,11 +1243,11 @@ __
      - #### HTML Table Tags 
        < table>=> It defines a table.
             
-       < tr>=> It defines a row in a table.
+       < tr>=> used to display table row
             
-       < th>=> It defines a header cell in a table.
+       < th>=> used to display table header
             
-       < td>=> It defines a cell in a table.
+       < td>=> used to display table data
             
        < caption>=> It defines the table caption.
             
@@ -1176,15 +1255,19 @@ __
             
        < col>=> It is used with <colgroup> element to specify column properties for each column.
             
-       < tbody>=> It is used to group the body content in a table.
+       < tbody>=> to wrap table body
             
-       < thead>	 => It is used to group the header content in a table.
+       < thead>	 => to wrap table head
             
        < tfooter>	=> It is used to group the footer content in a table.
 
 - ### HTML Form
      An HTML form is a section of a document which contains controls such as text fields, password fields, checkboxes, radio buttons, submit button, menus etc.
             
+       <form>
+       form content
+       </form>
+
      <strong>Why use HTML Form</strong>
             
      HTML forms are required if you want to collect some data from of the site visitor.
@@ -1214,7 +1297,27 @@ __
      < option>	      =>  It defines an option in a drop-down list.
           
      < button>	      =>  It defines a clickable button.
+          
+- ### Action in Form
+Action attribute is used to define what action needs to be
+performed when a form is submitted 
+
+     <form action="/action.php" > 
+
+- Form Element : 
+Input
+     <input type="text" placeholder="Enter Name">
  
+-Label
+          
+     <label for="id1">
+     <input type="radio" value="class X" name="class" id="id1">
+     </label>
+
+     <label for="id2">
+     <input type="radio" value="class X" name="class” id="id2">
+     </label>
+
 - ### Page Layout Techniques
      using Semantic tags for layout using the Right Tags 
 
@@ -2154,58 +2257,58 @@ React Context is a way to manage state globally.
 
 It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.
 
-        import { useState } from "react";
-        import ReactDOM from "react-dom/client";
+    import { useState } from "react";
+    import ReactDOM from "react-dom/client";
 
-        function Component1() {
-        const [user, setUser] = useState("Jesse Hall");
+    function Component1() {
+    const [user, setUser] = useState("Jesse Hall");
 
-        return (
-        <>
-        <h1>{`Hello ${user}!`}</h1>
-        <Component2 user={user} />
-        </>
-        );
-        }
+    return (
+    <>
+    <h1>{`Hello ${user}!`}</h1>
+    <Component2 user={user} />
+    </>
+    );
+    }
 
-        function Component2({ user }) {
-        return (
-        <>
-        <h1>Component 2</h1>
-        <Component3 user={user} />
-        </>
-        );
-        }
+    function Component2({ user }) {
+    return (
+    <>
+    <h1>Component 2</h1>
+    <Component3 user={user} />
+    </>
+    );
+    }
 
-        function Component3({ user }) {
-        return (
-        <>
-        <h1>Component 3</h1>
-        <Component4 user={user} />
-        </>
-        );
-        }
+    function Component3({ user }) {
+    return (
+    <>
+    <h1>Component 3</h1>
+    <Component4 user={user} />
+    </>
+    );
+    }
 
-        function Component4({ user }) {
-        return (
-        <>
-        <h1>Component 4</h1>
-        <Component5 user={user} />
-        </>
-        );
-        }
+    function Component4({ user }) {
+    return (
+    <>
+    <h1>Component 4</h1>
+    <Component5 user={user} />
+    </>
+    );
+    }
 
-        function Component5({ user }) {
-        return (
-        <>
-        <h1>Component 5</h1>
-        <h2>{`Hello ${user} again!`}</h2>
-        </>
-        );
-        }
+    function Component5({ user }) {
+    return (
+    <>
+    <h1>Component 5</h1>
+    <h2>{`Hello ${user} again!`}</h2>
+    </>
+    );
+    }
 
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<Component1 />);
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Component1 />);
 
 
 
