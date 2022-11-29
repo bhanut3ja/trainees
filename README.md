@@ -2334,3 +2334,25 @@ Wrap child components in the Context Provider and supply the state value.
     </UserContext.Provider>
     );
     }
+
+Now, all components in this tree will have access to the user Context.
+
+- ### Use the useContext Hook
+In order to use the Context in a child component, we need to access it using the useContext Hook.
+
+First, include the useContext in the import statement:
+
+    import { useState, createContext, useContext } from "react";
+
+Then you can access the user Context in all components:
+
+    function Component5() {
+    const user = useContext(UserContext);
+
+    return (
+    <>
+    <h1>Component 5</h1>
+    <h2>{`Hello ${user} again!`}</h2>
+    </>
+    );
+    }
