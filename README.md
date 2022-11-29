@@ -2310,10 +2310,27 @@ It can be used together with the useState Hook to share state between deeply nes
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<Component1 />);
 
+- ### Create Context
+To create context, you must Import createContext and initialize it:
 
 
+    import { useState, createContext } from "react";
+    import ReactDOM from "react-dom/client";
 
+    const UserContext = createContext()
 
+Next we'll use the Context Provider to wrap the tree of components that need the state Context.
 
+- ### Context Provider
+Wrap child components in the Context Provider and supply the state value.
 
+    function Component1() {
+    const [user, setUser] = useState("Jesse Hall");
 
+    return (
+    <UserContext.Provider value={user}>
+    <h1>{`Hello ${user}!`}</h1>
+    <Component2 user={user} />
+    </UserContext.Provider>
+    );
+    }
