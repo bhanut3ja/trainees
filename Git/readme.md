@@ -22,8 +22,8 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
        git init [repository-name]
     
-    <img src="img/git init.png" width="700">
-    
+    ![image](https://user-images.githubusercontent.com/117704825/204887702-b28b2f5e-6b1a-45d1-b5ab-39e39d7dee6e.png)
+
     Now you have successfully created a local Git repository.
 
 - ### Create a New Repository on GitHub
@@ -35,11 +35,11 @@ At a high level, GitHub is a website and cloud-based service that helps develope
 
     2. Find the <strong> New repository </strong> option under the <strong>+</strong> sign next to your profile picture, in the top right corner.
      <br></br>
-    <img src="img/create-repository-in-github.png">
+    ![image](https://user-images.githubusercontent.com/117704825/204887929-46870e24-1dd9-4e7d-b35f-6fec0ac51e11.png)
     <br></br>
     3. Enter a name for your repository, provide a brief description, and choose a privacy setting.
     <br></br>
-    <img src="img/github-repository-personalization.png">
+    ![image](https://user-images.githubusercontent.com/117704825/204888149-36cfa2ee-fc3c-4d76-b521-6713e8af2d67.png)
     <br></br>
     4. Click the Create repository button.
 
@@ -50,7 +50,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
     
     For example:
     <br></br>
-    <img src="img/push-local-repo-to-github.png">
+    ![image](https://user-images.githubusercontent.com/117704825/204888252-ddfb6812-0f20-43b2-9eba-4ed9b300599d.png)
     <br></br>
     
 - ### Add a File to the Repository
@@ -60,7 +60,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
     
       git status
       
-    <img src="img/git-status-command.png">
+    ![image](https://user-images.githubusercontent.com/117704825/204888322-628fb658-569e-4159-96b4-22b08da1c002.png)
     <br></br>
     Git notifies you if you have any untracked files. If you want Git to start tracking a file, run the following command:
     
@@ -68,7 +68,7 @@ At a high level, GitHub is a website and cloud-based service that helps develope
       
     For example:
     
-    <img src="img/add-file-to-repository.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204888390-62ddb03c-bc7f-4b86-af4a-dcac4dff7886.png)
     <br></br>
     
     In this example, we instructed Git to start tracking changes for the test.txt file. Rerunning the <strong>git status</strong> command shows that Git is tracking the specified file.
@@ -83,7 +83,7 @@ One way to unstage files on Git is to run the <strong>git reset</strong> command
     
     For example:
     
-    <img src="img/unstage-file-in-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204889067-9edd545e-5b7f-4104-bc3c-75ca79a519d3.png)
     <br></br>
 
 
@@ -98,7 +98,7 @@ The syntax is:
 
 For example:
 
-     <img src="img/push-commit-on-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204888906-db1b6d58-9b1d-4cf2-9083-17b9b5badf07.png)
     <br></br>
 
 - ### Undo Last Commit
@@ -114,7 +114,7 @@ A hash is a code that identifies each commit. Obtain a commit hash by running:
     
 For example:
 
-     <img src="img/undo-last-commit-on-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204889161-77dde363-381a-4871-b553-cbf9b6955a41.png)
     <br></br>
 
 In this example, we first ran the <strong>git log</strong> command to obtain the commit hash and then reverted the last commit by running <strong>git revert</strong> with the commit hash we obtained.
@@ -130,7 +130,7 @@ The common method for creating a new branch is by running:
 
 For example:
 
-     <img src="img/create-a-new-branch-in-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204889227-9166ac36-4bfe-416f-ab8d-a6e5fcf2c233.png)
     <br></br>
 
 In this example, we create a new branch named new-feature.
@@ -145,7 +145,7 @@ Replace [branch_name] with the branch name you want to access.
 
 For example:
 
-<img src="img/switch-branch-in-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204889266-34c72f2c-c99f-47b0-82cf-4497262a6335.png)
 <br></br>
     
 - ### Rename a Local or Remote Git Branch
@@ -157,7 +157,7 @@ The syntax for changing a local Git branch name is:
 
 For example:
 
-<img src="img/change-branch-name-in-git.png">
+![image](https://user-images.githubusercontent.com/117704825/204889326-551086b4-2229-4c90-ab8d-cc87d765d7f1.png)
 
 In this example, we changed the local branch name from new-feature to feature-testing.
 
@@ -178,14 +178,14 @@ Deleting a local branch doesn't affect a remote branch. To delete a <strong>loca
       
    In this example, we deleted a local Git branch:
    
-   <img src="img/delete-a-branch-in-git.png">
-
+   ![image](https://user-images.githubusercontent.com/117704825/204889406-8ce09b80-79c2-47cb-a37c-fd6777196085.png)
+   
 - ### Set Upstream Branch
 Sending something upstream in Git means that you are sending it back to the repository owner.
 
 Using the <strong>git set upstream</strong> command, you can choose the flow direction of your current local branch. The command also allows you to change the default remote branch.
 
-   <img src="img/set-upstream-branch-in-git.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889453-a8725caa-c995-4ba2-8703-0354e9a8cd9b.png)
 
 Our tutorial on What Is Git Upstream and How to Set an Upstream Branch deals with the different methods for setting an upstream branch and gives a detailed explanation on the topic.
 
@@ -200,7 +200,7 @@ There are several ways to remove a Git remote. One of the ways is to delete a re
       
 In the following example, running <strong>git remote -v</strong> shows the available remotes, 'origin' and 'test-remote.' After removing 'test-remote' and rerunning <strong>git remote -v</strong> to list available remotes, we see that the only available remote is 'origin.'
 
-   <img src="img/remove-a-git-remote.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889502-825ae1c0-0bcc-43af-8111-1133a80c1f96.png)
 
 - ### Git Merge
  
@@ -212,15 +212,15 @@ For example, you may want to merge a new feature branch into the main branch. Fo
 
 1. Run the <strong>git status</strong> command to ensure that HEAD is pointing to the correct merge-receiving (master) branch. If it is not, run <strong>git checkout </strong>master to switch to the master branch.
 
-   <img src="img/git-merge-first-step.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889558-2f2b4367-8b10-4585-a7a6-1fcbef7b4aef.png)
    
 2. Run git fetch to pull the latest remote commits and git pull to ensure the main branch has the latest updates.
 
-   <img src="img/git-merge-update.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889575-9317310d-8e27-4ce6-8b91-c241b8be0942.png)
    
 3. Run git merge X where X is the name of the branch you want to merge into the receiving branch.
 
-   <img src="img/git-merge.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889599-83302dcd-fc03-47e7-b4a5-a69f465ddb53.png)
 
 
 - ### Resolve Merge Conflicts
@@ -245,7 +245,7 @@ Follow the steps below:
 
 3. Open the readme file in a text editor and add the text you want it to contain. In this example, we will use the Nano text editor to modify the file within the command line window. Run <strong>nano readme.md<s/trong>.
 
-   <img src="img/opening-a-file-in-nano-text-editor.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889737-dbe42541-5506-49ce-a7a0-8e9d868f3a85.png)
 
  4. After you save the file, track it by running <strong>git add readme.md<strong>.
 
@@ -259,11 +259,11 @@ Follow the steps below:
      
  7. Log in to your GitHub page. There is now a <strong>Create pull request</strong> option in your repository with the branch name we created in the command line. Click the <strong>Compare & pull request</strong> button.
    
-   <img src="img/compare-and-pull-request-on-github.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889908-4537a995-ffc3-4371-9738-87264c2c02fc.png)
   
 8. GitHub states if you can merge the branches and apply the changes. Optionally, add a comment about your pull request and click <strong>Create pull request<strong>. 
      
-   <img src="img/create-pull-request.png">
+   ![image](https://user-images.githubusercontent.com/117704825/204889933-04f17755-66bb-4098-869e-0455155c2e5a.png)
      
    Now the repository owner, in this case, you, can review the changes and accept or reject them.
 
@@ -280,5 +280,4 @@ The command updates your local repository to match the one on GitHub, and states
 
 In the following example, we first switched to our master branch, and Git warned us that we should update our local repository:     
    
-   <img src="img/sync-git-and-github.png">
-     
+   ![image](https://user-images.githubusercontent.com/117704825/204889979-e216a2e5-31fe-4af5-a218-db3efec33517.png)
