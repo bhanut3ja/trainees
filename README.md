@@ -2356,3 +2356,221 @@ Then you can access the user Context in all components:
     </>
     );
     }
+
+- ### Hooks
+- What is a Hook?
+Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+Example:
+Here is an example of a Hook. Don't worry if it doesn't make sense.
+
+    import React, { useState } from "react";
+    import ReactDOM from "react-dom/client";
+
+    function FavoriteColor() {
+    const [color, setColor] = useState("red");
+
+    return (
+    <>
+    <h1>My favorite color is {color}!</h1>
+    <button
+    type="button"
+    onClick={() => setColor("blue")}
+    >Blue</button>
+    <button
+    type="button"
+    onClick={() => setColor("red")}
+    >Red</button>
+    <button
+    type="button"
+    onClick={() => setColor("pink")}
+    >Pink</button>
+    <button
+    type="button"
+    onClick={() => setColor("green")}
+    >Green</button>
+    </>
+    );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<FavoriteColor />);
+
+You must `import` Hooks from `react`.
+
+Here we are using the `useState` Hook to keep track of the application state.
+
+State generally refers to application data or properties that need to be tracked.
+
+Hook Rules
+There are 3 rules for hooks:
+
+- Hooks can only be called inside React function components.
+- Hooks can only be called at the top level of a component.
+- Hooks cannot be conditional
+
+> Note: Hooks will not work in React class components.
+
+- ### Parent and Child
+
+- Passing Data From Parent to Child
+When you need to pass data from a parent to child class component, you do this by using props.
+
+For example, let’s say you have two class components, Parent and Child, and you want to pass a state in the parent to the child. You would do something like this:
+
+    import React from 'react';
+
+    class Parent extends React.Component{
+    constructor(props){
+    super(props);
+    this.state = {
+    data: 'Data from parent'
+    }
+    }
+
+    render(){
+    const {data} = this.state;
+    return(
+    <div>
+    <Child dataParentToChild = {data}/>
+    </div>
+    )
+    }
+    }
+
+    class Child extends React.Component{
+    constructor(props){
+    super(props);
+    this.state = {
+    data: this.props.dataParentToChild
+    }
+    }
+
+    render(){
+    const {data} = this.state;
+    return(
+    <div>
+    {data}
+    </div>
+    )
+    }
+    }
+
+    export default Parent;
+
+As you can see, the parent component passes props to the child component and the child can then access the data from the parent via this.props.
+
+For the same example, if you have two function components instead of class components, you don’t even need to use props. You can do something like the following:
+
+    import React from 'react';
+
+    function Parent(){
+    const data = 'Data from parent';
+    return(
+    <div>
+    <Child dataParentToChild = {data}/>
+    </div>
+    )
+    }
+
+    function Child ({dataParentToChild}){
+    return(
+    <div>
+    {dataParentToChild}
+    </div>
+    )
+    }
+
+    export default Parent;
+                                   
+- ### Child to Parent
+
+Passing the data from the child to parent component is a bit trickier. In order to do this, you need to do the following steps:
+
+- Create a callback function in the parent component. This callback function will get the data from the child component.
+- Pass the callback function in the parent as a prop to the child component.
+- The child component calls the parent callback function using props.
+
+Let’s see how these steps are implemented using an example. You have two class components, Parent and Child. The Child component has a form that can be submitted in order to send its data up to the Parent component. It would look something like this:
+
+    import React from 'react';
+
+    class Parent extends React.Component{
+    constructor(props){
+    super(props);
+    this.state = {
+    data: null
+    }
+    }
+
+    handleCallback = (childData) =>{
+    this.setState({data: childData})
+    }
+
+    render(){
+    const {data} = this.state;
+    return(
+    <div>
+    <Child parentCallback = {this.handleCallback}/>
+    {data}
+    </div>
+    )
+    }
+    }
+
+    class Child extends React.Component{
+  
+    onTrigger = (event) => {
+    this.props.parentCallback("Data from child");
+    event.preventDefault();
+    }
+
+    render(){
+    return(
+    <div>
+    <form onSubmit = {this.onTrigger}>
+    <input type = "submit" value = "Submit"/>
+    </form>
+    </div>
+    )
+    }
+    }
+
+    export default Parent;
+
+As you can see, when the Child component is triggered, it will call the Parent component’s callback function with data it wants to pass to the parent. The Parent’s callback function will handle the data it received from the child.
+
+We’ve gone over passing data between a parent and child components in React. Just as a recap, here’s the different methods we’ve covered:
+
+- Passing data from parent to child class components
+- Passing data from parent to child function components
+- Passing data from child to parent
+
+- ### why key is importent in list
+A “key” is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted. In other words, we can say that keys are used to give an identity to the elements in the lists.
+
+    const numbers = [ 1, 2, 3, 4, 5 ];
+ 
+    const updatedNums = numbers.map((number)=>{
+    return <li key={index}>{number} </li>;
+    });
+
+You can also assign the array indexes as keys to the list items. The below example assigns array indexes as key to the elements. 
+
+    const numbers = [ 1, 2, 3, 4, 5 ];
+ 
+    const updatedNums = numbers.map((number, index)=>
+    <li key = {index}>
+    {number}
+    </li>
+    );
+
+Assigning indexes as keys are highly discouraged because if the elements of the arrays get reordered in the future then it will get confusing for the developer as the keys for the elements will also change.
+
+- ### What is an arrow function and how is it used in React?
+
+     - An arrow function is a short way of writing a function to React.
+     - It is unnecessary to bind ‘this’ inside the constructor when using an arrow function. This prevents bugs caused by the use of ‘this’ in React callbacks.
+
+![image](https://user-images.githubusercontent.com/117704825/204689454-30eeeb3e-260a-447a-86ae-c3296f3b2724.png)
+
