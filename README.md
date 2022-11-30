@@ -286,8 +286,7 @@ In the following example, we first switched to our master branch, and Git warned
    ![image](https://user-images.githubusercontent.com/117704825/204889979-e216a2e5-31fe-4af5-a218-db3efec33517.png)
    
  ---
- 
-# JavaScript
+ # JavaScript
 - ### What is javascript?
      JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning.
      
@@ -308,7 +307,7 @@ In the following example, we first switched to our master branch, and Git warned
 
     Here’s an illustration of all the possible use cases of JS today:
  
-    <img src="javascript/img/JS%20today.jpg">
+    ![image](https://user-images.githubusercontent.com/117704825/204896016-af814468-c2b5-46b4-a3a5-78678c2e3893.png)
      
 - ### How does JavaScript work?   
      JavaScript is considered a client-side scripting language, which means that it operates on the user's browser and does not function on an external device. An example of a language that is not client-side would be MySQL, a server-side language that handles any database requests.
@@ -380,7 +379,7 @@ In the following example, we first switched to our master branch, and Git warned
       const greeting = "say Hi";
       const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared
 
-    <img src="javascript/img/vlc.jpg">
+    ![image](https://user-images.githubusercontent.com/117704825/204896812-3f14da02-7053-4fdb-bb53-c2ba0babcb12.png)
      
 - ### Data Types     
      There are eight basic data types in JavaScript. They are:
@@ -427,7 +426,8 @@ In the following example, we first switched to our master branch, and Git warned
      
      There are following types of operators in JavaScript.
 
-    <img src="javascript/img/Operators.jpg">
+    ![image](https://user-images.githubusercontent.com/117704825/204896938-30834dcb-6169-46ed-aa7d-dd38e2f72106.png)
+
 
 - ### Arithmetic Operators     
      |Operator|Description|Example|
@@ -792,7 +792,7 @@ __
      - rejected: meaning that the operation failed.
 
 
-   <img src="javascript/img/promises.jpg">
+   ![image](https://user-images.githubusercontent.com/117704825/204896418-21544314-87a6-4931-98c2-4bfc48629c46.png)
 
      - A promise can be created using Promise constructor
 
@@ -959,7 +959,7 @@ __
       The example above uses the Car class to create two Car objects.
       The constructor method is called automatically when a new object is created.
 
-   <img src="javascript/img/Classes.jpg">
+   ![image](https://user-images.githubusercontent.com/117704825/204896540-7a36772e-8731-4a8c-95bd-f97a93eaca06.png)
 
 - ### Exception Handling 
      In programming, exception handling is a process or method used for handling the abnormal statements in the code and executing them. It also enables to handle the flow control of the code/program. 
@@ -1046,6 +1046,7 @@ __
       }
      
  ---
+---
  
  # HTML
 - ### What Is HTML ?
